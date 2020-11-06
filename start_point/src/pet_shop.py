@@ -10,3 +10,6 @@ def add_or_remove_cash(list, cash):
 
 def get_pets_sold(list):
     return(list["admin"]["pets_sold"])
+
+def increase_pets_sold(list, number_of_pets_sold):
+    list["admin"]["pets_sold"] += number_of_pets_sold
