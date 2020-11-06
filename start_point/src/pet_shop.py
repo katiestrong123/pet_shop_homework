@@ -22,4 +22,7 @@ def get_pets_by_breed(list, breed):
         if breed == list["pets"]["breed"]:
             return dog
 
-
+def get_pets_by_name(list, name):
+    for dog in list:
+        if name == list["pets"]["name"]:
+            return dog
