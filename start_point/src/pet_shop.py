@@ -37,18 +37,6 @@ def remove_pet_by_name(list, name):
 def add_pet_to_stock(list, pet):
     list["pets"].append(pet)
 
-#    F 
-#        I 
-#             X 
-#                     T 
-#                         H 
-#                             I 
-#                                 S 
-#                                       C 
-#                                            O
-#                                                 D
-#                                                      E
-                                                            # 
 def get_customer_cash(customer_list):
     return customer_list["cash"]
 
@@ -58,5 +46,6 @@ def remove_customer_cash(customer_list, cash):
 def get_customer_pet_count(customer_list):
     return len(customer_list["pets"])
 
-def add_pet_to_customer(customer_list, pet):
-    get_customer_pet_count(customer_list).append(pet)
+def add_pet_to_customer(customer_list, new_pet):
+    customer_list["pets"].append(new_pet)
+    return get_customer_pet_count(customer_list)
