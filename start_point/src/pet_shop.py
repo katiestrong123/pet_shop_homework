@@ -49,3 +49,17 @@ def get_customer_pet_count(customer_list):
 def add_pet_to_customer(customer_list, new_pet):
     customer_list["pets"].append(new_pet)
     return get_customer_pet_count(customer_list)
+
+#  # --- OPTIONAL ---
+
+def customer_can_afford_pet(customer_list, price):
+    # can_by_pet = False 
+    customer_cash = customer_list["cash"] 
+    if customer_cash >= 100:
+        can_by_pet = True 
+    else:
+        can_by_pet = False 
+    return can_by_pet
+
+
+         
